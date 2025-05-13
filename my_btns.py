@@ -56,6 +56,12 @@ Food_menu = InlineKeyboardMarkup(
                 text='Manti',
                 callback_data='man'
             )
+        ],
+        [
+            InlineKeyboardButton(
+                text='Makaron',
+                callback_data='mak'
+            )
         ]
     ]
 )
