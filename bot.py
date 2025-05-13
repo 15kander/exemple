@@ -6,15 +6,20 @@ from aiogram import Bot,Dispatcher,types,F
 from aiogram.filters import Command
 from my_btns import main_menu
 from my_btns import Food_menu
+from my_btns import knopkiy
 
 api = '8012775338:AAHUlBzKnjjrCBIwdkhJe9mshK9khIPvvgQ'
 bot = Bot(api)
 dp=Dispatcher()
-
 @dp.message(Command('start'))
 async def send_hi(sms:types.Message):
     await sms.answer(text='Hello',
                      reply_markup=main_menu)
+@dp.message(Command('Qalay'))
+async def send_hii(sms:types.Message):
+    await sms.answer(text='Qalay',
+                     reply_markup=knopkiy)
+
 
 @dp.callback_query(F.data=='awqat')
 async def send_reaction(call:types.CallbackQuery):

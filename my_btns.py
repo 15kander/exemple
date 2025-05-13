@@ -1,4 +1,4 @@
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup,KeyboardButton
 
 
 main_menu = InlineKeyboardMarkup(
@@ -64,14 +64,20 @@ Food_menu = InlineKeyboardMarkup(
             )
         ],
         [
-            InlineKeyboardMarkup(
+            InlineKeyboardButton(
                 text='Grechka',
                 callback_data='grech'
             )
         ]
     ]
 )
-
+knopkiy = ReplyKeyboardMarkup(
+    keyboard=[
+        [
+            KeyboardButton(text="qalay")
+        ]
+    ]
+)
 
 
 
