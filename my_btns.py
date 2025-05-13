@@ -62,6 +62,12 @@ Food_menu = InlineKeyboardMarkup(
                 text='Makaron',
                 callback_data='mak'
             )
+        ],
+        [
+            InlineKeyboardMarkup(
+                text='Grechka',
+                callback_data='grech'
+            )
         ]
     ]
 )
